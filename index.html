@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html lang="bn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Vanta Marketplace — প্রকল্পের বর্তমান অবস্থা ও ক্লায়েন্ট গাইড</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Hind Siliguri"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased min-h-screen selection:bg-brand-500 selection:text-white pb-24">
+<!-- Top Navigation / Status Header -->
+<header class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-6 py-4 transition-all">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 font-extrabold text-xl tracking-tight">
+          V
+        </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-slate-900 tracking-tight text-lg">Vanta Marketplace</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
+              ফেজ ১ ভ্যালিডেটেড
+            </span>
+</div>
+<p class="text-xs text-slate-500 font-medium">প্রকল্পের বর্তমান অবস্থা ও ক্লায়েন্ট এক্সিকিউটিভ গাইড</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 py-1.5 px-3 rounded-lg border border-slate-200">
+<i class="fa-regular fa-calendar-check text-brand-600"></i>
+<span>আর্কিটেকচার মাইলস্টোন: অফলাইন সিমুলেটর সম্পন্ন</span>
+</div>
+<button class="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-brand-700 bg-white hover:bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm transition" onclick="window.print()">
+<i class="fa-solid fa-arrow-down-to-line"></i>
+<span>রিপোর্ট ডাউনলোড</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 space-y-10">
+<!-- Hero / Master Banner -->
+<section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-900 via-brand-800 to-indigo-950 text-white p-8 sm:p-12 shadow-xl shadow-brand-900/10 border border-brand-700/50">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/4 -bottom-24 w-80 h-80 bg-indigo-500/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold tracking-wide text-brand-200">
+<i class="fa-solid fa-sparkles text-amber-300"></i> মাইলস্টোন সারাংশ ও ক্লায়েন্ট ব্রিফিং
+        </div>
+<h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Vanta Marketplace — প্রকল্পের বর্তমান অবস্থা
+        </h1>
+<p class="text-base sm:text-lg text-brand-100 font-normal leading-relaxed">
+          কী কী তৈরি হয়েছে, কেন এই কাজগুলো অত্যন্ত গুরুত্বপূর্ণ এবং পরবর্তী পৃথক ব্যাকএন্ড ধাপে ঠিক কী যুক্ত হতে যাচ্ছে তার একটি স্পষ্ট রূপরেখা।
+        </p>
+<!-- Executive KPI ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+<div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-3.5">
+<div class="text-2xl font-bold text-white flex items-center gap-1.5">
+<span>১০০%</span>
+<i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+</div>
+<p class="text-xs text-brand-200 font-medium mt-0.5">ফ্রন্টএন্ড এক্সপেরিয়েন্স সম্পন্ন</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-3.5">
+<div class="text-2xl font-bold text-white flex items-center gap-1.5">
+<span>শূন্য</span>
+<i class="fa-solid fa-shield-halved text-sky-300 text-sm"></i>
+</div>
+<p class="text-xs text-brand-200 font-medium mt-0.5">টাকার কোনো ঝুঁকি নেই</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-3.5">
+<div class="text-2xl font-bold text-white flex items-center gap-1.5">
+<span>৬টি কোর</span>
+<i class="fa-solid fa-layer-group text-purple-300 text-sm"></i>
+</div>
+<p class="text-xs text-brand-200 font-medium mt-0.5">ইন্টারঅ্যাক্টিভ সাবসিস্টেম</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-3.5">
+<div class="text-2xl font-bold text-white flex items-center gap-1.5">
+<span>প্রস্তুত</span>
+<i class="fa-solid fa-plug-circle-bolt text-amber-300 text-sm"></i>
+</div>
+<p class="text-xs text-brand-200 font-medium mt-0.5">ব্যাকএন্ড ইন্টিগ্রেশনের জন্য প্রস্তুত</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Takeaway / Executive Punchline Card -->
+<section class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/90 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 via-brand-500 to-indigo-500"></div>
+<div class="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-sm">
+<i class="fa-solid fa-lightbulb"></i>
+</span>
+<h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">সহজভাবে বললে</h2>
+</div>
+<p class="text-slate-700 text-base leading-relaxed max-w-2xl">
+            Vanta অ্যাপটি এখন কোনো সাধারণ স্ট্যাটিক স্ক্রিন বা ছবির ডামি নয় — এটি একটি <b class="text-slate-900 font-semibold bg-brand-50 text-brand-700 px-2 py-0.5 rounded border border-brand-200/60">সম্পূর্ণ অফলাইন মার্কেটপ্লেস সিমুলেটর (Offline Marketplace Simulator)</b>।
+          </p>
+</div>
+<div class="bg-emerald-50 border border-emerald-200/90 rounded-xl p-4 sm:p-5 max-w-md w-full shrink-0 shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 mt-0.5 text-sm shadow-sm">
+<i class="fa-solid fa-check-double"></i>
+</div>
+<div class="space-y-1">
+<div class="font-bold text-emerald-900 text-sm uppercase tracking-wide">গুরুত্বপূর্ণ মাইলস্টোন প্রসঙ্গ</div>
+<p class="text-xs sm:text-sm text-emerald-800 leading-relaxed">
+                প্রোডাকশন ব্যাকএন্ড সম্পূর্ণ আলাদা একটি পরবর্তী ধাপ। এখন লাইভ সার্ভার, MongoDB, ইন্টারনেট বা আসল পেমেন্ট গেটওয়ে ছাড়াই সম্পূর্ণ মার্কেটপ্লেস ওয়ার্কফ্লো বাস্তব ডিভাইসে চমৎকারভাবে প্রদর্শন করা যাচ্ছে।
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivered Scope -->
+<section class="space-y-5">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-200 pb-3">
+<div>
+<div class="text-xs font-bold uppercase tracking-wider text-brand-600">সম্পন্ন করা স্কোপ</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">কী কী সম্পন্ন হয়েছে?</h2>
+</div>
+<p class="text-sm text-slate-500">মূল ৬টি কোর অপারেশনাল ইঞ্জিন সম্পূর্ণরূপে নির্মিত ও পরীক্ষিত</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<!-- Card 1 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-bag-shopping"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">কাস্টমার মার্কেটপ্লেস</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              হোম পেজ, ক্যাটাগরি, সার্চ, স্টোর প্রোফাইল, প্রোডাক্ট ডিটেইলস, উইশলিস্ট, কার্ট এবং চেকআউট সিস্টেম।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+<i class="fa-solid fa-users text-slate-400"></i> ক্রেতার জন্য প্রোডাক্ট খোঁজা ও ক্রয়ের পূর্ণ অভিজ্ঞতা
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-store"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">সেলার সিস্টেম</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              সেলার রেজিস্ট্রেশন, সেলার মোড, সেলার সেন্টার ড্যাশবোর্ড, প্রোডাক্ট ও ইনভেন্টরি যোগ, অর্ডার হ্যান্ডলিং, রিটার্ন ও স্টোর সেটিংস।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+<i class="fa-solid fa-chart-line text-slate-400"></i> মার্চেন্ট পোর্টাল ও ইনভেন্টরি ম্যানেজমেন্ট টুলস
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-truck-ramp-box"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">অর্ডারিং সিস্টেম</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              ডেলিভারি অ্যাড্রেস, ভাউচার কোড, অর্ডার তৈরি, একাধিক সেলারের জন্য প্যাকেজ স্প্লিটিং, ফুলফিলমেন্ট, ক্যান্সেলেশন এবং রিফান্ড লজিক।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+<i class="fa-solid fa-arrows-split-up-and-left text-slate-400"></i> মাল্টি-ভেন্ডর ডেলিভারি ও প্যাকেজ স্প্লিটিং
+          </div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-credit-card"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">পেমেন্ট সিমুলেশন</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              ক্যাশ অন ডেলিভারি (COD)-সহ লোকাল বিকাশ (bKash), নগদ (Nagad) এবং কার্ড পেমেন্ট সিমুলেটর — কোনো আসল টাকা কাটা হয় না।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-pink-600 font-medium">
+<i class="fa-solid fa-shield text-pink-500"></i> শতভাগ ঝুঁকিমুক্ত লোকাল পেমেন্ট গেটওয়ে ফ্লো
+          </div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-heart-circle-check"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">কাস্টমার ফিচারসমূহ</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              প্রোডাক্ট রিভিউ, রেটিং, নোটিফিকেশন সিস্টেম, সংরক্ষিত অ্যাড্রেস, সেভ করা আইটেম, সাম্প্রতিক সার্চ এবং পূর্ণাঙ্গ অর্ডার হিস্ট্রি।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+<i class="fa-regular fa-bell text-slate-400"></i> পোস্ট-পারচেজ লুপ ও গ্রাহক ধরে রাখার ফিচারসমূহ
+          </div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl mb-4 group-hover:scale-105 transition-transform">
+<i class="fa-solid fa-scale-balanced"></i>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-bold text-lg text-slate-900">মার্কেটপ্লেস রুলস ও লজিক</h3>
+<span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded-full border border-emerald-200">প্রস্তুত</span>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed">
+              স্টক ট্র্যাকিং, ভ্যারিয়েন্ট, প্রাইসিং, ডিসকাউন্ট, সেলার ওনারশিপ, অর্ডার স্ট্যাটাস ট্র্যাকিং, রিটার্ন ও রিফান্ড সংক্রান্ত ব্যবসায়িক নীতিমালা।
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
+<i class="fa-solid fa-code-branch text-slate-400"></i> জটিল ই-কমার্স বিজনেস লজিক বাস্তবায়িত
+          </div>
+</div>
+</div>
+</section>
+<!-- Visual Marketplace Flow Stepper -->
+<section class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+<div>
+<div class="text-xs font-bold uppercase tracking-wider text-brand-600">এন্ড-টু-এন্ড সিমুলেশন</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">সম্পূর্ণ Marketplace Flow</h2>
+</div>
+<span class="text-xs bg-slate-100 text-slate-700 font-medium px-3 py-1 rounded-full border border-slate-200">
+          আজকের অ্যাপেই লাইভ ভেরিফাই করা যায়
+        </span>
+</div>
+<!-- Timeline steps -->
+<div class="relative py-4">
+<!-- Connecting Line -->
+<div class="hidden lg:block absolute top-1/2 left-4 right-4 h-1 bg-gradient-to-r from-brand-200 via-indigo-200 to-emerald-200 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-2.5 relative z-10">
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">১</div>
+<div class="font-bold text-xs text-slate-900">Register</div>
+<div class="text-[10px] text-slate-500">ইউজার তৈরি</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">২</div>
+<div class="font-bold text-xs text-slate-900">Seller Mode</div>
+<div class="text-[10px] text-slate-500">সেলার অ্যাক্টিভেশন</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৩</div>
+<div class="font-bold text-xs text-slate-900">Product Add</div>
+<div class="text-[10px] text-slate-500">স্টক ও ভ্যারিয়েন্ট</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৪</div>
+<div class="font-bold text-xs text-slate-900 leading-tight">Product লাইভ</div>
+<div class="text-[10px] text-slate-500">ক্যাটালগে দেখা যায়</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৫</div>
+<div class="font-bold text-xs text-slate-900">Customer কিনে</div>
+<div class="text-[10px] text-slate-500">কার্ট ও চেকআউট</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৬</div>
+<div class="font-bold text-xs text-slate-900">Payment Simulate</div>
+<div class="text-[10px] text-slate-500">বিকাশ/নগদ/কার্ড</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৭</div>
+<div class="font-bold text-xs text-slate-900 leading-tight">Seller Order পায়</div>
+<div class="text-[10px] text-slate-500">ড্যাশবোর্ডে অর্ডার</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৮</div>
+<div class="font-bold text-xs text-slate-900 leading-tight">Seller Fulfill করে</div>
+<div class="text-[10px] text-slate-500">প্যাক ও ডিসপ্যাচ</div>
+</div>
+<div class="bg-slate-50 hover:bg-brand-50/50 transition border border-slate-200 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">৯</div>
+<div class="font-bold text-xs text-slate-900 leading-tight">Customer পায়</div>
+<div class="text-[10px] text-slate-500">ডেলিভারি সম্পন্ন</div>
+</div>
+<div class="bg-emerald-50/80 hover:bg-emerald-100/60 transition border border-emerald-300 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<div class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm mb-1.5">১০</div>
+<div class="font-bold text-xs text-emerald-950 leading-tight">Review দেয়</div>
+<div class="text-[10px] text-emerald-700">রেটিং ও ফিডব্যাক</div>
+</div>
+</div>
+</div>
+<!-- Post-delivery handling banner -->
+<div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center gap-3 text-sm text-slate-700">
+<i class="fa-solid fa-arrows-spin text-brand-600 text-lg shrink-0"></i>
+<span><b>ডেলিভারি-পরবর্তী পূর্ণাঙ্গ লাইফসাইকেল যুক্ত:</b> পণ্য ডেলিভারি সম্পন্ন হলে কাস্টমার রিভিউ ও রেটিং দিতে পারেন। কোনো সমস্যা হলে অর্ডার ক্যান্সেলেশন, রিটার্ন ও রিফান্ড পরিচালনাও সম্পূর্ণরূপে সিমুলেট করা আছে।</span>
+</div>
+</section>
+<!-- Why All Of This Is Necessary & Why Payment Alone Isn't Enough (Deep Explainer) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left side: Narrative reason -->
+<div class="lg:col-span-6 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+<div class="w-10 h-10 rounded-xl bg-purple-100 text-brand-700 flex items-center justify-center text-lg">
+<i class="fa-solid fa-network-wired"></i>
+</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">কেন এতগুলো জিনিস প্রয়োজন?</h2>
+<p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+          একটি মার্কেটপ্লেস শুধু সাধারণ একটি পেমেন্ট বোতাম নয়। এটি মূলত <b class="text-slate-900">কাস্টমার, সেলার, প্রোডাক্ট, ইনভেন্টরি ও অর্ডারের</b> মধ্যকার এক জটিল পারস্পরিক নেটওয়ার্ক।
+        </p>
+<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3 text-xs sm:text-sm text-slate-700">
+<p class="leading-relaxed">
+            একজন সেলার প্রোডাক্ট যুক্ত করলে তা সাথে সাথে ক্রেতাদের ফিডে দৃশ্যমান হতে হয়। কাস্টমার পণ্য কিনলে স্বয়ংক্রিয়ভাবে স্টক আপডেট হওয়া, নির্দিষ্ট সেলারের কাছে নির্দিষ্ট অর্ডারের ভাগ পৌঁছানো, ফুলফিলমেন্ট স্ট্যাটাস পরিবর্তন হওয়া এবং কাস্টমারের কাছে লাইভ ট্র্যাকিং যাওয়া আবশ্যক।
+          </p>
+<p class="leading-relaxed text-slate-500">
+            একইভাবে অর্ডার ক্যান্সেলেশন, রিটার্ন, রিফান্ড, রিভিউ ও নোটিফিকেশন—সবকিছুই এই পারস্পরিক সম্পর্কের ওপর নির্ভরশীল।
+          </p>
+</div>
+<p class="text-xs font-semibold text-brand-800 bg-brand-50 border border-brand-200/80 rounded-lg p-3">
+<i class="fa-solid fa-check-circle mr-1.5 text-brand-600"></i> বর্তমান অ্যাপটিতে এই সম্পূর্ণ চেইন সফলভাবে লোকাল ডিভাইসে কাজ করছে। এজন্যই এটি নিছক ডিজাইনের স্ট্যাটিক স্ক্রিন নয়, বরং একটি কার্যকর মার্কেটপ্লেস রেফারেন্স আর্কিটেকচার।
+        </p>
+</div>
+<!-- Right side: Why Payment Alone Is Not Enough -->
+<div class="lg:col-span-6 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+<div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-lg">
+<i class="fa-solid fa-triangle-exclamation"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">Payment থাকলেই কেন Marketplace হয় না?</h2>
+<p class="text-xs text-slate-500 mt-1">অ্যাপে বিকাশ, নগদ বা কার্ড পেমেন্ট বোতাম যুক্ত থাকলেও নিচের প্রশ্নগুলোর সমাধান থাকতেই হয়:</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">কোন প্রোডাক্টটি কোন নির্দিষ্ট সেলারের মালিকানাধীন</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">প্রতিটি ভ্যারিয়েন্টে কয়টি স্টক অবশিষ্ট আছে</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">কোন কাস্টমার ঠিক কোন ডেলিভারি ঠিকানায় অর্ডার দিয়েছেন</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">কার্টের কোন আইটেমটি কোন সেলারকে ফুলফিল করতে হবে</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">ডেলিভারির প্রতিটি ধাপ কীভাবে পরিবর্তিত ও ট্র্যাকিং হবে</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">অর্ডার বাতিল হলে স্টক পুনরায় কীভাবে অ্যাডজাস্ট হবে</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">রিটার্ন অনুমোদিত হলে কীভাবে রিফান্ড হিসাব সমন্বিত হবে</span>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-check text-brand-600 text-xs mt-1"></i>
+<span class="text-xs text-slate-700 font-medium">কোন রিভিউটি আসল যাচাইকৃত (Verified) ক্রেতার</span>
+</div>
+<div class="col-span-1 sm:col-span-2 flex items-start gap-2.5 p-2.5 rounded-lg bg-brand-50/70 border border-brand-200">
+<i class="fa-solid fa-lock text-brand-700 text-xs mt-1"></i>
+<span class="text-xs text-brand-900 font-semibold">কোন অ্যাকাউন্ট টাইপ (ক্রেতা বনাম সেলার) কী তথ্য দেখতে বা সম্পাদনা করতে পারবে</span>
+</div>
+</div>
+<p class="text-xs text-slate-500 italic pt-1">
+          এই কাঠামোগত সম্পর্কগুলোই মূলত একটি কার্যকর মার্কেটপ্লেসের আসল মেরুদণ্ড।
+        </p>
+</div>
+</section>
+<!-- Matrix: What is local right now vs Future Backend (Comparison) -->
+<section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+<div class="p-6 sm:p-8 bg-slate-50/80 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<div class="text-xs font-bold uppercase tracking-wider text-brand-600">আর্কিটেকচার স্বচ্ছতা</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">বর্তমানে সবকিছু কোথায় চলছে?</h2>
+<p class="text-xs sm:text-sm text-slate-500 mt-1">মার্কেটপ্লেসের বিজনেস ওয়ার্কফ্লো প্রমাণের জন্য প্রয়োজনীয় সমস্ত উপাদান লোকালি কার্যকর রয়েছে।</p>
+</div>
+<div class="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-sm text-xs font-semibold text-slate-700">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          ক্লায়েন্ট পর্যালোচনার জন্য প্রস্তুত
+        </div>
+</div>
+<div class="divide-y divide-slate-100">
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-boxes-stacked"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">প্রোডাক্ট, ক্যাটালগ, কাস্টমার ও সেলার</div>
+<div class="text-xs text-slate-500">প্রোফাইল তৈরি, ক্যাটাগরি ব্রাউজ, মাল্টি-মার্চেন্ট প্রোডাক্ট ক্যাটালগ</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+<i class="fa-solid fa-circle-check text-emerald-600"></i> লোকাল ইঞ্জিন সক্রিয়
+            </span>
+</div>
+</div>
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">কার্ট, উইশলিস্ট ও অর্ডার তৈরি</div>
+<div class="text-xs text-slate-500">কার্টে যোগ, ডিভাইসে সেভ থাকা পছন্দের তালিকা, অর্ডার প্রসেসিং</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+<i class="fa-solid fa-circle-check text-emerald-600"></i> লোকাল ইঞ্জিন সক্রিয়
+            </span>
+</div>
+</div>
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-clipboard-list"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">ইনভেন্টরি ও সেলার অপারেশন</div>
+<div class="text-xs text-slate-500">লাইভ স্টক সংখ্যা হ্রাস, পণ্য পাঠানো, সেলার কন্ট্রোল প্যানেল</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+<i class="fa-solid fa-circle-check text-emerald-600"></i> লোকাল ইঞ্জিন সক্রিয়
+            </span>
+</div>
+</div>
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">চেকআউট ও ডেলিভারি প্রক্রিয়া</div>
+<div class="text-xs text-slate-500">ডেলিভারি ঠিকানা প্রদান, শিপিং নিয়মাবলী, পর্যায়ক্রমিক স্ট্যাটাস আপডেট</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200">
+<i class="fa-solid fa-cube text-blue-600"></i> লোকাল সিমুলেশন
+            </span>
+</div>
+</div>
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-wallet"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">বিকাশ / নগদ / কার্ড পেমেন্ট</div>
+<div class="text-xs text-slate-500">আর্থিক কোনো ঝুঁকি বা চার্জ ছাড়াই ইন্সট্যান্ট ভ্যালিডেশন ফ্লো</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+<i class="fa-solid fa-shield-halved text-amber-600"></i> নিরাপদ সিমুলেশন — কোনো আসল টাকা নয়
+            </span>
+</div>
+</div>
+<div class="p-4 sm:px-8 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/60 transition">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-bell"></i>
+</div>
+<div>
+<div class="font-bold text-sm text-slate-900">নোটিফিকেশন, রিভিউ ও রিটার্ন</div>
+<div class="text-xs text-slate-500">ইন্টারঅ্যাক্টিভ রিফান্ড অবস্থা, রেটিং ও সিস্টেম অ্যালার্ট ফিড</div>
+</div>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+<i class="fa-solid fa-circle-check text-emerald-600"></i> লোকাল ইঞ্জিন সক্রিয়
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Future Backend Phase Plan -->
+<section class="bg-gradient-to-b from-white to-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+<div class="max-w-3xl space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+<i class="fa-solid fa-cloud-arrow-up"></i> পরবর্তী ধাপের রোডম্যাপ
+        </div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">তাহলে Backend কেন প্রয়োজন? Backend যুক্ত হলে কী নতুন হবে?</h2>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          ব্যাকএন্ড সম্পূর্ণ আলাদা একটি ধাপ। <b>এর অর্থ এই নয় যে মার্কেটপ্লেসটি আবার নতুন করে বানাতে হবে।</b> এর মূল উদ্দেশ্য হলো লোকাল ডিভাইসের যাচাইকৃত বিজনেস ডেটাকে ইন্টারনেটের মাধ্যমে সবার জন্য একটি কেন্দ্রীভূত ক্লাউড সিস্টেমে রূপান্তর করা।
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-database"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">১. Central Database</div>
+<p class="text-xs text-slate-600 leading-normal">
+            ইউজার, সেলার, প্রোডাক্ট, ইনভেন্টরি ও অর্ডারের সমস্ত তথ্য সুরক্ষিত ক্লাউড ডাটাবেজে (যেমন MongoDB/AWS) সংরক্ষিত থাকবে।
+          </p>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-mobile-screen-button"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">২. Multi-user Marketplace</div>
+<p class="text-xs text-slate-600 leading-normal">
+            একজন সেলার তার ল্যাপটপ থেকে প্রোডাক্ট যোগ করলে অন্য যেকোনো গ্রাহক নিজ নিজ মোবাইল ফোনে তা তৎক্ষণাৎ দেখতে পাবেন।
+          </p>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-key"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">৩. Central Authentication</div>
+<p class="text-xs text-slate-600 leading-normal">
+            ক্রেতা ও সেলারের জন্য সেন্ট্রাল অথেন্টিকেশন, পাসওয়ার্ড এনক্রিপশন ও একাধিক ডিভাইসে নিরাপদ লগইন সেশন ব্যবস্থাপনা।
+          </p>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-rotate"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">৪. Synchronization</div>
+<p class="text-xs text-slate-600 leading-normal">
+            রিয়েল-টাইম স্টক আপডেট, অর্ডারের তাৎক্ষণিক পুশ নোটিফিকেশন অ্যালার্ট এবং একাধিক ইউজারের মধ্যে নিখুঁত ডেটা সমন্বয়।
+          </p>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-shield-cat"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">৫. Production Security</div>
+<p class="text-xs text-slate-600 leading-normal">
+            সার্ভার-সাইড ভ্যালিডেশন, রোল পারমিশন, টেম্পারিং প্রতিরোধ এবং নিরাপত্তা প্রটোকল প্রয়োগ।
+          </p>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200/90 shadow-sm space-y-2">
+<div class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm">
+<i class="fa-solid fa-plug"></i>
+</div>
+<div class="font-bold text-slate-900 text-sm">৬. Real Integrations</div>
+<p class="text-xs text-slate-600 leading-normal">
+            আসল পেমেন্ট গেটওয়ে মার্চেন্ট অ্যাকাউন্ট, AWS S3 ইমেজ স্টোরেজ, ট্রানজেকশনাল SMS/ইমেইল এবং লাইভ ক্লাউড হোস্টিং।
+          </p>
+</div>
+</div>
+<!-- Golden Callout -->
+<div class="bg-amber-50 border-l-4 border-amber-500 p-4 sm:p-5 rounded-r-xl">
+<div class="flex items-start gap-3">
+<i class="fa-solid fa-star text-amber-600 mt-1 text-base shrink-0"></i>
+<p class="text-sm text-amber-900 leading-relaxed font-medium">
+<strong class="font-bold">সবচেয়ে গুরুত্বপূর্ণ বিষয়:</strong> আমরা পুরো ব্যবসায়িক ওয়ার্কফ্লোটি প্রথমে লোকালি প্রমাণ করে নিয়েছি। ব্যাকএন্ড কেবল এই পূর্ব-নির্ধারিত ওয়ার্কফ্লোটিকে ইন্টারনেটের মাধ্যমে সত্যিকারের একাধিক ব্যবহারকারীর জন্য উন্মুক্ত করবে।
+          </p>
+</div>
+</div>
+</section>
+<!-- Why Local-First Strategy Saves Money & Time (6 Key Benefits) -->
+<section class="space-y-4">
+<div class="border-b border-slate-200 pb-3">
+<div class="text-xs font-bold uppercase tracking-wider text-emerald-600">কৌশলগত সুবিধা</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">Local-first approach কেন ভালো?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ১
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">অভিজ্ঞতা আগে নিশ্চিত করা</h3>
+<p class="text-xs text-slate-600 leading-relaxed">সার্ভারের ভারী খরচে যাওয়ার আগেই সম্পূর্ণ প্রোডাক্টের কার্যকারিতা ও ইউজার জার্নি নিখুঁতভাবে যাচাই করা সম্ভব হয়।</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ২
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">আর্থিক কোনো ঝুঁকি নেই</h3>
+<p class="text-xs text-slate-600 leading-relaxed">ডেমো বা পরীক্ষার সময় ভুল পেমেন্ট কাটা, ব্যাংক অ্যাকাউন্ট লক হওয়া বা আর্থিক ক্ষতির কোনো আশঙ্কাই থাকে না।</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ৩
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">শতভাগ নিরবচ্ছিন্ন ডেমো</h3>
+<p class="text-xs text-slate-600 leading-relaxed">মিটিং চলাকালে দুর্বল ওয়াইফাই, সার্ভার ডাউন বা ইন্টারনেট বিভ্রাটের কারণে অ্যাপ কখনো আটকে যায় না।</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ৪
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">ব্যবসায়িক নিয়ম স্পষ্টকরণ</h3>
+<p class="text-xs text-slate-600 leading-relaxed">সার্ভারের জটিলতা যুক্ত করার আগেই বিজনেসের সূক্ষ্ম শর্ত ও স্টক নিয়মের মতো বিষয়গুলো পরিষ্কারভাবে মীমাংসিত হয়।</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ৫
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">বাস্তব ইন্টারঅ্যাক্টিভ অনুভূতি</h3>
+<p class="text-xs text-slate-600 leading-relaxed">ক্লায়েন্ট ও স্টেকহোল্ডাররা কেবল স্লাইড না দেখে নিজ হাতে প্রোডাক্ট কিনে, সেলার মোডে গিয়ে বাস্তব মার্কেটপ্লেসের অনুভূতি পান।</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 border border-slate-200 flex gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0">
+            ৬
+          </div>
+<div>
+<h3 class="font-bold text-sm text-slate-900 mb-1">ইঞ্জিনিয়ারদের কোনো অনুমান নয়</h3>
+<p class="text-xs text-slate-600 leading-relaxed">ব্যাকএন্ড ফেজে গিয়ে ডেভেলপারদের মনগড়া কিছু করতে হয় না; তারা চোখের সামনে একটি সম্পূর্ণ কার্যকরী ব্লুপ্রিন্ট পায়।</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Scope Guardrails: What Is Not Being Claimed Yet -->
+<section class="bg-slate-900 text-slate-100 rounded-2xl p-6 sm:p-8 shadow-md border border-slate-800 space-y-4">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-slate-800 text-amber-400 flex items-center justify-center text-sm border border-slate-700">
+<i class="fa-solid fa-hand-holding-hand"></i>
+</span>
+<div>
+<h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">এখন কী নেই?</h2>
+<p class="text-xs text-slate-400">পার্টনার বা স্টেকহোল্ডারদের সাথে ভুল বোঝাবুঝি এড়াতে বর্তমান সীমানা</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">এটি এখনো ইন্টারনেটে লাইভ কোনো <b>পাবলিক মার্কেটপ্লেস নয়</b>।</span>
+</div>
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">পেমেন্ট মেথডগুলো সিমুলেশন, এতে <b>আসল কোনো টাকা লেনদেন হয় না</b>।</span>
+</div>
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">লোকাল ডেটা এখনো কোনো <b>কেন্দ্রীভূত ক্লাউড ডাটাবেজে জমা হয় না</b>।</span>
+</div>
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">এক ফোনের সেলারের প্রোডাক্ট স্বয়ংক্রিয়ভাবে অন্য কারো ফোনে সিঙ্ক হয় না।</span>
+</div>
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">প্রোডাকশন পেমেন্ট গেটওয়ে মার্চেন্ট অ্যাগ্রিমেন্ট সম্পূর্ণ আলাদা বিষয়।</span>
+</div>
+<div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3.5 flex items-start gap-3">
+<i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+<span class="text-xs text-slate-300">লাইভ হোস্টিং, সার্ভার ব্যাকআপ ও সার্বক্ষণিক মনিটরিং অবকাঠামো অন্তর্ভুক্ত নয়।</span>
+</div>
+</div>
+</section>
+<!-- Pricing / Scope Separation (Commercial clarity) -->
+<section class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+<div class="space-y-1">
+<div class="text-xs font-bold uppercase tracking-wider text-brand-600">বাণিজ্যিক সারসংক্ষেপ</div>
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">Pricing নিয়ে কীভাবে বিষয়টি ভাগ করা যায়?</h2>
+<p class="text-sm text-slate-600">
+          প্রকল্পটিকে দুটি স্পষ্ট মাইলস্টোনে ভাগ করা বাজেটকে সুরক্ষিত রাখে এবং বিভ্রান্তি দূর করে।
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Phase 1 Column -->
+<div class="rounded-2xl border-2 border-emerald-500 bg-emerald-50/20 p-6 flex flex-col justify-between relative">
+<div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+            Phase 1 • সম্পন্ন
+          </div>
+<div>
+<div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">বর্তমান মাইলস্টোন</div>
+<h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Completed Marketplace Application</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">
+              কাস্টমার অভিজ্ঞতা, সেলার অভিজ্ঞতা, মার্কেটপ্লেস রুলস, চেকআউট, অর্ডার লাইফসাইকেল, পেমেন্ট সিমুলেটর এবং সম্পূর্ণ অফলাইন আর্কিটেকচার।
+            </p>
+</div>
+<div class="bg-white rounded-xl p-3.5 border border-emerald-200 text-xs text-emerald-900 font-semibold flex items-center gap-2">
+<i class="fa-solid fa-check-circle text-emerald-600 text-sm"></i>
+            একটি সম্পূর্ণ কার্যকরী, স্পর্শযোগ্য মার্কেটপ্লেস প্রোডাক্ট সরবরাহ করে।
+          </div>
+</div>
+<!-- Phase 2 Column -->
+<div class="rounded-2xl border border-brand-300 bg-brand-50/20 p-6 flex flex-col justify-between relative">
+<div class="absolute -top-3 right-6 bg-brand-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+            Phase 2 • পরবর্তী ধাপ
+          </div>
+<div>
+<div class="text-xs font-bold text-brand-800 uppercase tracking-wider">ভবিষ্যৎ মাইলস্টোন</div>
+<h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Backend &amp; Production Phase</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">
+              সেন্ট্রাল ডাটাবেজ, API, একাধিক ডিভাইসের লাইভ সিঙ্ক্রোনাইজেশন, প্রোডাকশন সিকিউরিটি, ক্লাউড হোস্টিং ডেপ্লয়মেন্ট ও মার্চেন্ট পেমেন্ট গেটওয়ে চুক্তি।
+            </p>
+</div>
+<div class="bg-white rounded-xl p-3.5 border border-brand-200 text-xs text-brand-900 font-semibold flex items-center gap-2">
+<i class="fa-solid fa-arrow-right text-brand-600 text-sm"></i>
+            যাচাইকৃত সেই প্রোডাক্টটিকে সরাসরি ইন্টারনেটে সচল প্ল্যাটফর্মে রূপান্তর করে।
+          </div>
+</div>
+</div>
+<div class="bg-slate-100/80 rounded-xl p-4 text-center text-xs sm:text-sm text-slate-700 font-medium">
+<b>ক্লিয়ারিটি সারসংক্ষেপ:</b> এই দুটি স্কোপ আলাদা রাখলে মূল্য নির্ধারণ নিয়ে আলোচনা স্বচ্ছ থাকে: প্রথম ফেজটি কার্যকরী মার্কেটপ্লেস প্রদান করেছে; দ্বিতীয় ফেজটি সেই প্রস্তুত প্রোডাক্টকে ইন্টারনেটে সংযুক্ত প্রোডাকশন সিস্টেমে পরিণত করবে।
+      </div>
+</section>
+<!-- Executive Conclusion Banner -->
+<section class="rounded-2xl bg-gradient-to-r from-brand-700 via-indigo-700 to-purple-800 text-white p-6 sm:p-8 shadow-lg text-center space-y-3">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider text-brand-200 border border-white/10">
+<i class="fa-solid fa-quote-left text-xs"></i> এক লাইনে পুরো Project Status
+      </div>
+<blockquote class="text-lg sm:text-2xl font-bold leading-relaxed max-w-4xl mx-auto text-white">
+        "Vanta-র সম্পূর্ণ মার্কেটপ্লেস অভিজ্ঞতা ইতিমধ্যেই একটি অফলাইন সিমুলেটর হিসেবে তৈরি ও যাচাই করা হয়েছে; পরবর্তী মূল ধাপ হলো এই পূর্ব-নির্ধারিত মার্কেটপ্লেসটিকে একটি আসল ব্যাকএন্ডের সাথে যুক্ত করা, যাতে আসল কাস্টমার ও সেলাররা বিভিন্ন ডিভাইস থেকে একই ডেটা ব্যবহার করতে পারেন।"
+      </blockquote>
+</section>
+</main>
+<footer class="max-w-6xl mx-auto px-6 mt-12 text-center text-xs text-slate-400">
+<p>Vanta Marketplace Platform Specification &amp; Client Walkthrough • Confidential Document</p>
+</footer>
+</body></html>
